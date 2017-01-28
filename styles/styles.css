@@ -1,16 +1,34 @@
+.form-container {
+  margin-top:20px;
+  border:solid grey 1px;
+  border-radius: 10px;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+}
+.input-box {
+  border-radius: 5px;
+  border:solid 1px grey;
+}
 .form-table {
   margin:50px;
-
 }
-
+.input-message {
+  color:green;
+  border:green 1px solid;
+  margin-left:10px;
+  padding:4px;
+}
 .input-label {
   padding:10px;
 }
 
 .input-error {
-  padding: 10px;
+  margin-left: 10px;
+  padding:4px;
   color: red;
   font-size: 10px;
+  font-weight: 600;
+  /*background-color: red;*/
+  border:solid red 1px;
 }
 .table-label {
   font-size: 20px;
@@ -19,4 +37,27 @@
 #region-input , #town-input{
   color: gray;
   background-color: whitesmoke;
+}
+.arrow {
+  background-color: red;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: inline-block;
+  width:8px;
+  height: 8px;
+  border: red solid 1px;
+}
+.arrow::after {
+  content: ' ';
+  width: 8px;
+  height: 8px;
+  background-color: blueviolet;
+}
+
+.gender {
+  display:inline-block;
+}
+
+.gender-label {
+  display:inline-block;
 }
