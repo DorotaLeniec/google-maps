@@ -1,0 +1,22 @@
+.form-table {
+  margin:50px;
+
+}
+
+.input-label {
+  padding:10px;
+}
+
+.input-error {
+  padding: 10px;
+  color: red;
+  font-size: 10px;
+}
+.table-label {
+  font-size: 20px;
+  font-weight: 800;
+}
+#region-input , #town-input{
+  color: gray;
+  background-color: whitesmoke;
+}

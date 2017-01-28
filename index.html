@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IBMP</title>
+  <link rel="stylesheet" href="styles/bootstrap.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+<h1>Wniosek o urlop</h1>
+<form id="holiday-form">
+  <table class="form-table">
+    <thead>
+    <tr>
+      <td class="table-label">Dane osobowe:</td>
+    </tr>
+    </thead>
+    <tr>
+      <td class="input-label">Imię:</td>
+
+      <td><input data-inputmask="'mask': '99-9999999'" id="name-input" class="input-box" placeholder="Imię"></td>
+      </td>
+
+      <td><span id="name-error" class="input-error">Podaj imię</span></td>
+    </tr>
+
+    <tr>
+      <td class="input-label">Nazwisko:</td>
+
+      <td><input id="surname-input" class="input-box" placeholder="Nazwisko"></td>
+      </td>
+
+      <td><span id="surname-error" class="input-error">Podaj Nazwisko</span></td>
+    </tr>
+
+    <tr>
+      <td class="input-label">Email:</td>
+
+      <td><input id="email-input" class="input-box" placeholder="Email"></td>
+      </td>
+
+      <td><span id="email-error" class="input-error">Niepoprawny adres email</span></td>
+    </tr>
+
+    <tr>
+      <td class="input-label">Telefon (komórkowy):</td>
+
+      <td><input id="tel-input" class="input-box" placeholder="Numer"></td>
+      </td>
+
+      <td><span id="tel-error" class="input-error">Nr telefonu komórkowego jest za krótki</span></td>
+    </tr>
+
+  </table>
+  <table class="form-table">
+    <thead>
+    <tr>
+      <td class="table-label">Adres zamieszkania:</td>
+    </tr>
+    </thead>
+    <tr>
+      <td class="input-label">Ulica:</td>
+
+      <td><input id="street-input" class="input-box" placeholder="Ulica"></td>
+      </td>
+
+      <td><span id="street-error" class="input-error">Podaj imię</span></td>
+    </tr>
+
+    <tr>
+      <td class="input-label">Nr domu:</td>
+
+      <td><input id="house-input" class="input-box" placeholder="Numer domu"></td>
+      </td>
+
+      <td><span id="house-error" class="input-error">Podaj Nazwisko</span></td>
+    </tr>
+
+    <tr>
+      <td class="input-label"> Wojewódzctwo:</td>
+
+      <td>
+        <select id="region-input"
+                onchange="selectRegion()"
+                class="input-box">
+          <option value>Wojewódzctwo</option>
+        </select>
+      </td>
+      </td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td class="input-label">Miasto:</td>
+
+      <td>
+        <select id="town-input" class="input-box">
+          <option value>Miasto</option>
+        </select>
+      </td>
+
+    </tr>
+
+    <tr>
+      <td class="input-label"></td>
+
+      <td></td>
+
+      <td>
+        <button type="submit" id="submit-button">Dalej</button>
+      </td>
+      </td>
+
+    </tr>
+  </table>
+</form>
+
+<script src="scripts/jquery-2.2.0.min.js"></script>
+<script src="scripts/inputmask.js"></script>
+<script src="scripts/jquery.inputmask.bundle.js"></script>
+
+<script src="scripts/bootstrap.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/validation.js"></script>
+<script src="scripts/cities.js"></script>
+
+
+</body>
+
+</html>
