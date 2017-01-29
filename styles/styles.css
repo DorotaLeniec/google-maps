@@ -2,33 +2,45 @@
   margin-top:20px;
   border:solid grey 1px;
   border-radius: 10px;
-  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-family: Courier, "Lucida Console", monospace;
 }
 .input-box {
-  border-radius: 5px;
-  border:solid 1px grey;
+  border-radius: 2px;
+  border:solid 1px #b6a9a9;
+  font-size: 13px;
+  padding:3px;
+  width:174px;
+  color:black;
+}
+.input-box:focus{
+  border-radius: 2px;
 }
 .form-table {
   margin:50px;
+  margin-top:10px;
+}
+.label {
+  border-bottom:solid black 1px;
+}
+.row-input{
+  height:30px;
+}
+.row-error {
+  height: 14px;
+  padding:0;
 }
 .input-message {
   color:green;
-  border:green 1px solid;
-  margin-left:10px;
   padding:4px;
 }
 .input-label {
   padding:10px;
+  width:255px;
 }
 
 .input-error {
-  margin-left: 10px;
-  padding:4px;
   color: red;
   font-size: 10px;
-  font-weight: 600;
-  /*background-color: red;*/
-  border:solid red 1px;
 }
 .table-label {
   font-size: 20px;
@@ -37,21 +49,6 @@
 #region-input , #town-input{
   color: gray;
   background-color: whitesmoke;
-}
-.arrow {
-  background-color: red;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  display: inline-block;
-  width:8px;
-  height: 8px;
-  border: red solid 1px;
-}
-.arrow::after {
-  content: ' ';
-  width: 8px;
-  height: 8px;
-  background-color: blueviolet;
 }
 
 .gender {

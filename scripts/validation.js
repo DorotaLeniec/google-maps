@@ -43,7 +43,7 @@ function check_name(){
   var name_length = $('#name-input').val().length;
 
   if(name_length < 3 || name_length > 20){
-    $nameError.html('Imię powinno mieć od 3 do 20 znaków');
+    $nameError.html('od 3 do 20 znaków');
     $nameError.show();
     error_name = true;
   }else{
@@ -55,8 +55,8 @@ function check_surname(){
 
   var surname_length = $('#surname-input').val().length;
 
-  if(surname_length < 3 || surname_length > 20){
-    $surnameError.html('Nazwisko powinno mieć nie mniej niż 3 znaki');
+  if(surname_length < 3){
+    $surnameError.html('Nie mniej niż 3 znaki');
     $surnameError.show();
     error_surname = true;
   }else{
