@@ -58,3 +58,19 @@
 .gender-label {
   display:inline-block;
 }
+.form-header {
+  text-align: center;
+}
+
+.table-header{
+  font-weight: 600;
+  padding-left: 40px;
+}
+
+.send-button {
+  float:right;
+margin:10px;
+  border-radius: 2px;
+  border:solid #b6a9a9 1px;
+  padding:2px 8px;
+}

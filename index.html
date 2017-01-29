@@ -13,7 +13,7 @@
 
 <div class="container ">
   <div class="form-container col-xs-8">
-<h2 class="form-header">Formularz zgłoszeniowy</h2>
+<h3 class="form-header">Formularz zgłoszeniowy</h3>
   <hr>
 <form id="holiday-form">
   <h4 class="table-header">Dane osobowe:</h4>
@@ -61,13 +61,17 @@
     </tr>
 
     <tr class="row-input">
-      <td class="input-label">Nr telefon (komórkowego):</td>
-      <td><input id="tel-input" class="input-box" placeholder="Numer"></td>
+      <td class="input-label">Nr telefonu (komórkowego):</td>
+      <td><input id="tel-input"
+                 class="input-box"
+                 placeholder="Numer"
+                 onclick="showTelMessage()"
+      ></td>
     </tr>
 
     <tr class="row-error">
       <td></td>
-      <td class="input-error"><div id="tel-error" class="input-error"></div></td>
+      <td class="input-error"><div id="tel-message" class="input-message">Powinien zawierać 9 cyfr</div></td>
     </tr>
   </table>
 
@@ -122,8 +126,8 @@
       <td></td>
       <td class="input-error"><div id="postcode-message" class="input-message">np: 80-899</div></td>
     </tr>
-
   </table>
+  <button type="submit" class="send-button">Wyślij</button>
 </form>
 </div>
 </div>

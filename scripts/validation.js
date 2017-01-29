@@ -4,15 +4,20 @@ var $nameError = $('#name-error');
 var $surnameError = $('#surname-error');
 var $telError = $('#tel-error');
 var $postcodeMessage = $('#postcode-message');
+var $telMessage = $('#tel-message');
 
 $emailError.hide();
 $nameError.hide();
 $surnameError.hide();
 $telError.hide();
 $postcodeMessage.hide();
+$telMessage.hide();
 
 function showMessage(){
   $postcodeMessage.show()
+}
+function showTelMessage(){
+  $telMessage.show();
 }
 
 $('#tel-input').inputmask('(+48)-999-999-999');
@@ -21,7 +26,6 @@ $('#postcode-input').inputmask('99-999');
 var error_name = false;
 var error_surname = false;
 var error_email = false;
-var error_tel = false;
 
 $('#name-input').focusout(function(){
   check_name();
@@ -35,9 +39,6 @@ $('#email-input').focusout(function(){
 check_email();
 });
 
-$('#tel-inputt').focusout(function(){
-check_tel();
-});
 
 function check_name(){
   var name_length = $('#name-input').val().length;
