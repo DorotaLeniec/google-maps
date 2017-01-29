@@ -133,7 +133,19 @@
 </div>
 </div>
 
-<div id="map"></div>
+<div id="map" class="col-xs-8"></div>
+<div class="col-sm-4">
+  <button id="get-my-location"
+  onclick="getMapLocation()">Zlokalizuj mnie
+  </button>
+<br/>
+<br/>
+  <form id="direction-form">
+    Skąd: <input id="start-point-name" type="text" title="start">
+    Dokąd: <input id="end-point-name" type="text">
+    <div onclick="getDirection()">Znajdz</div>
+  </form>
+</div>
 
 <script src="libraries/jquery-2.2.0.min.js"></script>
 <script src="libraries/inputmask.js"></script>
@@ -143,10 +155,10 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTKvmsmExcSySC_66go30qvDRqt_3teBo&callback=initMap"
         async defer></script>
 <script src="libraries/bootstrap.js"></script>
-<script src="scripts/script.js"></script>
+<script src="scripts/direction.js"></script>
 <script src="scripts/validation.js"></script>
 <script src="scripts/cities.js"></script>
-<script src="scripts/googleMaps.js"></script>
+<script src="scripts/getMapLocation.js"></script>
 
 
 </body>
