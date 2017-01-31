@@ -2,8 +2,12 @@ var geoLoc = navigator.geolocation;
 
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
-var directionsMap;
-var directionsLong, directionsLat, directionsLatLong, start, end;
+var directionsMap,
+  directionsLong,
+  directionsLat,
+  directionsLatLong, 
+  start,
+  end;
 
 $('#error-display').hide();
 
