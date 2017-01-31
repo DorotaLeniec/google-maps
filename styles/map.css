@@ -1,14 +1,28 @@
-body{
-  height: 2000px;
-}
-#map {
+
+ #direction-canvas{
   margin:50px;
   height: 500px;
-  width: 500px;
-  border:2px solid black;
+  width: 600px;
   border-radius: 4px;
   padding:10px;
 }
- #get-my-location {
-   margin-top: 100px;
+
+ .directions-query {
+   margin-top:200px;
+   margin-left: 100px;
+ }
+
+ #start, #end {
+   display: block;
+   margin: 30px;
+ }
+
+ #directionButton {
+   margin-left: 100px;
+ }
+
+ #error-display {
+   color:red;
+   margin-top: 20px;
+   margin-left: 20px;
  }
