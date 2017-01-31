@@ -5,7 +5,7 @@ var directionsService = new google.maps.DirectionsService();
 var directionsMap,
   directionsLong,
   directionsLat,
-  directionsLatLong, 
+  directionsLatLong,
   start,
   end;
 

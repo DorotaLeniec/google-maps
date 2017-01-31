@@ -78,7 +78,3 @@ function check_email(){
   }
 
 }
-
-function check_tel(){
-
-}
