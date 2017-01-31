@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IBMP</title>
+  <title>zadanie rekrutacyjne</title>
   <link rel="stylesheet" href="styles/bootstrap.css">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/map.css">
@@ -14,14 +14,14 @@
 
 <div class="container">
   <div class="form-container col-xs-8">
-<h3 class="form-header">Formularz zgłoszeniowy</h3>
+<h3 class="form-header" id="form-title">Formularz zgłoszeniowy</h3>
   <hr>
 <form id="holiday-form">
   <h4 class="table-header">Dane osobowe:</h4>
     <hr>
   <table class="form-table">
     <tr class="row-input">
-      <td class="input-label">Imię:</td>
+      <td class="input-label">Imię:*</td>
       <td class="input-error"><input id="name-input" class="input-box" placeholder="Imię">
     </tr>
 
@@ -52,7 +52,7 @@
       </td>
     </tr>
     <tr class="row-input">
-      <td class="input-label">Email:</td>
+      <td class="input-label">Email:*</td>
       <td><input id="email-input" class="input-box" placeholder="Email"></td>
     </tr>
 
@@ -128,7 +128,9 @@
       <td class="input-error"><div id="postcode-message" class="input-message">np: 80-899</div></td>
     </tr>
   </table>
-  <button type="submit" class="send-button">Wyślij</button>
+  <p>* - pola wymagane</p>
+  <span id="form-warning"></span>
+  <button type="submit" class="send-button" id="sendButton">Wyślij</button>
 </form>
 </div>
 </div>
